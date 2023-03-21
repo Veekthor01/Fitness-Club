@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #0C090A;
+    color: #FAF5EF;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+   
+}
+.logo img{
+   width: 25vh;
+}
+.logo h1 {
+    padding: 40px;
+    font-size: 45px;
+ }
+ .nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+  }
+  
+  .nav ul li {
+    display: inline-block;
+    margin: 0 120px;
+    font-size: 30px;
+    padding: 10px;
+    color: #FAF5EF;
+    font-weight: bold;
+    
+  }
+  .nav ul li:hover {
+   color: #C0C0C0;
+  }
+  
+  #mission {
+    display: flex;
+   height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1665991947189-272bf6e99f9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4N3xCbi1EanJjQnJ3b3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    padding-top: 35px;
+  }
+  .the-mission {
+    margin: auto;
+    background-color: #0C090A;
+    width: 100%;
+  }
+  .the-mission h2 {
+    color: #FAF5EF;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .the-mission h3 {
+    color: #FAF5EF;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  #activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #activities h2 {
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    font-size: 35px;
+  }
+  
+  #activities h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+  }
+  
+  .activity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .activity-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .activity-image img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s ease-in-out;
+  }
+  .activity-image img:hover {
+    transform: scale(1.11);
+  }
+  
+  .activity-image span {
+    text-align: center;
+    padding: 5px;
+    min-width: 240px;
+    font-weight: bold;
+  }
+  .top-row {
+    flex-basis: 23%;
+  }
+  
+  .bottom-row {
+    flex-basis: 23%;
+    margin-top: 20px;
+  }
+  .top h2{
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    font-size: 35px;
+  }
+  
+  #members {
+    display: flex;
+    min-height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1659662540909-58659bc15fb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI3OXxCbi1EanJjQnJ3b3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    padding-top: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .top-image {
+    padding: 10px;
+    color: white;
+    flex-basis: 280px;
+    text-align: center;
+  }
+  
+  .top-image img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    padding-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s ease-in-out;
+  }
+  .top-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  .top-image h3 {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .top-image h3:hover {
+    color: #0C090A;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    #members {
+      min-height: 400px;
+    }
+    .top-image {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .top-image {
+      flex-basis: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .nav ul li {
+      display: block;
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .logo img {
+      width: 15vh; 
+    }
+    .logo h1 {
+      padding: 20px; 
+      font-size: 35px;
+    }
+  }
+  
+  
+  .fitness {
+    display: flex;
+    justify-content: center;
+  }
+  .fit{
+text-align: center;
+  }
+  .fit h2{
+    text-align: center;
+    font-size: 30px;
+      }
+      .fit h4{
+        text-align: center;
+        font-size: 20px;
+          }
+          .fit p{
+            text-align: center;
+            font-size: 15px;
+            padding: 15px;
+              }
