@@ -1,2 +1,3 @@
 # Fitness-Club Webpage
-This is a Fitness club webpage made with html and css
+This is a Fitness club webpage that helps people get fit with various exercising activities.
+Made with html and css
